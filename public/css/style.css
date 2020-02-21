@@ -1,0 +1,332 @@
+html{
+  height: 100%;
+  scroll-behavior: smooth;  
+}
+body{
+  min-height: 100%;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+body::after {
+  content: '';
+  display: block;
+  height: 200px; /* Set same as footer's height */
+}
+.container-fluid{
+  padding: 0;
+}
+.row{
+  margin: 0 auto;
+}
+h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  color: rgba(199, 19, 59, 1);
+}
+h5{
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+}
+img{
+  width: 100%;
+}
+a{
+  color: rgba(199, 19, 59, 1);
+}
+a:hover{
+  color: rgba(199, 19, 59, 0.5);
+}
+.btn-primary{
+  background-color: rgba(199, 19, 59, 1);
+  border-color: rgba(199, 19, 59, 1);;
+}
+.btn-primary:hover{
+  background-color: rgba(199, 19, 59, 0.5);
+  border-color: rgba(199, 19, 59, 1);
+}
+.btn-primary:active{
+  background-color: rgba(199, 19, 59, 1) !important;
+  border-color: rgba(199, 19, 59, 1) !important;
+  box-shadow: 0 0 0 0.2rem rgba(199, 19, 59, 0.5) !important;
+}
+/* Menu principal */
+.navbar img{
+  width: 59px;
+  height: 50px;
+}
+.menu-principal{
+  background-color: rgba(0,0,0,.4);
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+.menu-principal a{
+  color: rgba(255,255,255,1);
+  font-weight: normal;
+  transition: all 1s ease;
+}
+.menu-principal a:hover{
+  color: rgba(199, 19, 59, 1);
+}
+.menu-principal2{
+  background-color: rgba(255,255,255,1);
+}
+.menu-principal2 a{
+  background: none;
+  color: rgba(0,0,0,1);
+  font-weight: normal;
+}
+.navbar-light .navbar-nav .nav-link{
+  text-transform: uppercase;
+  color: rgba(255,255,255,1);
+}
+.navbar-light .navbar-nav .nav-link-scroll{
+  text-transform: uppercase;
+  color: rgba(0,0,0,1);
+}
+.menu-principal .navbar-toggler  .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(199, 19, 59, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.menu-principal .navbar-nav .nav-link:hover{
+  color: rgba(199, 19, 59, 1);
+}
+/* Menu principal */
+/* Logo y marca */
+.navbar-brand{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+  color: rgba(255,255,255,1) !important;
+}
+.navbar-brand2{
+  color:rgba(0,0,0,1) !important;
+}
+.navbar-light .navbar-brand:hover{
+  color: rgba(199, 19, 59, 1);
+}
+/* Logo y marca */
+/* Forms */
+.form-row{
+  margin: 0 auto;
+}
+/* Forms */
+/* Footer */
+footer {
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: 200px;
+  padding: 30px 0;
+  margin-top: -200px;
+}
+.footer{
+  background-color: rgba(199, 19, 59, 1);
+  text-align: center;
+  color: #fff;
+  font-size: small;
+}
+.footer p{
+  padding-top: 15px;
+}
+.footer img{
+  width: 100px;
+  height: auto;
+  padding-top: 15px;
+}
+.btn-whatsapp {
+  display:block;
+  background-color: #25D366;
+  width:70px;
+  height:70px;
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  padding-top: 7px;
+  border-radius:50%;
+  line-height:80px;
+  text-align:center;
+  z-index:999;
+}
+.btn-whatsapp i{
+  color: #fff;
+  font-size: 3rem;
+}
+/* Footer */
+/* Secciones */
+#nosotros::before,
+#taller::before,
+#galeria::before,
+#contacto::before {
+display: block;
+content: " ";
+margin-top: -65px;
+height: 65px;
+visibility: hidden;
+}
+.slider-principal{
+  height: 100vh;
+}
+.slider-principal img{
+  height: 100vh;
+  object-fit: cover;
+  object-position: center center;
+}
+.slider-principal::before{
+  content: '';
+  color: white; 
+  font-family: arial;
+  background-color: rgba(0,0,0,.5);
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+  animation: conysin ease 8s infinite; 
+}
+.carousel-control-prev, .carousel-control-next{
+  z-index: 4;
+}
+.carousel-caption{
+  bottom: 33%;
+}
+.nosotros{
+  text-align: center;
+  margin: 0 0 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.taller{
+  background-color: #f8f9fa;
+  padding: 0 0 30px 0;
+}
+.taller img{
+  padding-top: 7px;
+  padding-bottom: 50px;
+}
+.centrar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Styles for the gallery */
+.galeria{
+  padding: 0 0 50px 0;
+}
+.gallery-container p.page-description {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 18px;
+  color: #85878c;
+}
+.tz-gallery {
+  padding: 0 0;
+}
+
+.tz-gallery .thumbnail {
+  padding-bottom: 0;
+  border: none;
+}
+
+.tz-gallery img {
+  filter:brightness(0.4);
+}
+.tz-gallery img:hover {
+  filter: brightness(1);
+  transition: all 1s ease;
+}
+.tz-gallery .caption{
+  position: absolute;
+  right: 10%;
+  bottom: 35%;
+  left: 10%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  z-index:2;
+  text-transform: uppercase;
+}
+
+.tz-gallery .caption h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.tz-gallery .caption p {
+  font-size: 12px;
+  color: #7b7d7d;
+  margin: 0;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+.medios-de-pago{
+  padding: 0 20px 30px 20px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+.medios-de-pago ul{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.medios-de-pago ul li{
+  margin: 0 auto;
+  background: none;
+  border: none;
+  text-align: center;
+}
+.medios-de-pago ul li i{
+  font-size: 3rem;
+}
+.medios-de-pago ul li i:hover{
+  color: rgba(199, 19, 59, 1);
+}
+.medios-de-pago ul li p{
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding-top: 15px;
+  text-align: center;
+  font-size: small;
+}
+.contacto{
+  margin: 50px 0;
+}
+.contacto .formulario{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Secciones */
+
+@media (min-width: 992px){
+  /* Secciones */
+  .pestanias{
+    background-color: #f8f9fa;
+    padding: 100px 100px;
+  }
+  .medios-de-pago ul li p{
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding-top: 15px;
+    text-align: center;
+    font-size: unset;
+  }
+  .carousel-caption{
+    bottom: 45%;
+  }
+  /* Secciones */
+}
